@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/EcoRecicla1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Cambiando el mundo!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#006400"
+        android:text="Consejos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="273dp"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="337dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/app_consejos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Separación de los residuos. Antes de tirarlos, se deben separar para poder depositarlos en el contenedor que les corresponde. Lo ideal es contar con recipientes independientes. Con un solo cubo con separadores es suficiente. Limpiar envases. Otro consejo de los expertos es limpiar los envases antes de llevarlos al contenedor. En cuanto a las botellas de aceite o los envases de productos cosméticos y de limpieza, no se tiene que enjuagar porque provoca vertidos tóxicos en el agua." />
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="453dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/app_consejos2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Reducir el tamaño de botellas y bricks. Se pueden aplastar los bricks y las botellas de plástico. Cuando sea posible, las latas de metal se pueden meter unas dentro de otras, siempre evitando cortarse.
+
+Leer las etiquetas. Los plásticos suelen llevar información relativa al reciclaje en etiquetas y envases. En un código especial se indica el material o mezcla de materiales usados en su fabricación. En algunos casos, la etiqueta señala en qué contenedor se debe depositar ese envase." />
+
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="569dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/app_consejos3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. Depositar los residuos. Hay que localizar antes la zona de contenedores más próxima a la vivienda y luego arrojarlos al correcto: contenedor azul (papel y cartón), contenedor amarillo (envases de plásticos, latas y briks), contenedor verde (vidrio), contenedor marrón (materia orgánica, no está en todas las comunidades autónomas, con los restos se puede hacer compost, biorresiduo que sirve como fertilizante o como generador de energía) y  contenedor gris (aquí van todos los residuos que no se reciclan, en algunas comunidades autónomas es verde oscuro)." />
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
